@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "862642409811",
+    "project_id": "lifetracker-7dedb",
+    "storage_bucket": "lifetracker-7dedb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862642409811:android:35f1881e90c253c09dd1a6",
+        "android_client_info": {
+          "package_name": "com.example.a1hw4monthlifetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862642409811-g2vsef9mfvqffvknbs31g73ur3vfd4f7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.a1hw4monthlifetracker",
+            "certificate_hash": "57e22149a615800a6b34654e4fbe6f8d28497d53"
+          }
+        },
+        {
+          "client_id": "862642409811-sa5jki2kdgrbcfn0cro2d6hokq2k08gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANKZtNV42DlkpzXOPI4rhTVTK0Nqx61lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862642409811-sa5jki2kdgrbcfn0cro2d6hokq2k08gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

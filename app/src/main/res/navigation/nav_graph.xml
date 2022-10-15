@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/boardFragment">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.a1hw4monthlifetracker.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskFragment2"
+        android:name="com.example.a1hw4monthlifetracker.TaskFragment"
+        android:label="fragment_task"
+        tools:layout="@layout/fragment_task" />
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.example.a1hw4monthlifetracker.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" >
+        <action
+            android:id="@+id/action_boardFragment_to_homeFragment2"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph.xml"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.a1hw4monthlifetracker.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationNumberFragment"
+        android:name="com.example.a1hw4monthlifetracker.RegistrationNumberFragment"
+        android:label="fragment_registration_number"
+        tools:layout="@layout/fragment_registration_number" />
+    <fragment
+        android:id="@+id/startRegistrationFragment"
+        android:name="com.example.a1hw4monthlifetracker.StartRegistrationFragment"
+        android:label="fragment_start_registration"
+        tools:layout="@layout/fragment_start_registration" />
+</navigation>
